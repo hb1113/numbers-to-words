@@ -1,4 +1,4 @@
-n = input('please enter the number')
+n = input('please enter the number:\n')
 
 dic0 = {
     '1': 'یک',
