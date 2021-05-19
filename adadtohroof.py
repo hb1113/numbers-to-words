@@ -84,6 +84,8 @@ def dahgan(a):
     m1 = a[1]
     if m1 == '0':
         return norm(m0)
+    elif m0 == '00':
+        return norm(m1)
         
     return dic0[m0] + ' و ' + dic0[m1]
 
@@ -95,12 +97,9 @@ def sadgan(a):
     if a in dic0:
         return dic0[a]
     m0 = a[0]
-    print(m0)
     m1 = a[1:]
-    print(type(m1))
     
     if m1 == '00':
-        print('yes')
         y = ''
     else:
         y = dahgan(m1)
