@@ -98,12 +98,19 @@ def sadgan(a):
         return dic0[a]
     m0 = a[0]
     m1 = a[1:]
-    
+    y = dahgan(m1)
+    x = dic0[m0]
+    sad = 'صد و '
     if m1 == '00':
         y = ''
     else:
-        y = dahgan(m1)
-    return dic0[m0] + 'صد و ' + y
+        if m0 == '2':
+            return 'دویست و ' + y
+        elif m0 == '3':
+            return 'سیصد و ' + y
+        elif m0 == '5':
+            return 'پانصد و ' + y
+    return x + sad + y
 
 
 def hroof3(number):
